@@ -4,9 +4,13 @@ import { easing } from "maath"
 const HeroCamera = ({children,isMobile}) => {
     const groupRef = useRef()
     useFrame((state,delta) => {
-        easing.damp3(state.camera.position,[0,0,20],10,delta)
+        easing.damp3(state.camera.position,[0,5,20],10,delta)
+
+    
+        
 
         if(!isMobile) {
+          
             easing.dampE(groupRef.current.rotation,[-state.pointer.y/3,state.pointer.x/5,0],0.25,delta)
         }
     })
