@@ -1,6 +1,7 @@
 import Globe from 'react-globe.gl'
 import Button from '../components/Button'
 import { useState } from 'react'
+import Tiles from '../components/Tiles'
 
 const About = () => {
   const [isCopied, setIsCopied] = useState(false)
@@ -25,11 +26,12 @@ const About = () => {
           </div>
         </div>
         <div className="col-span-1 xl:row-span-3">
-            <div className="grid-container">
-              <img src="/assets/grid2.png" alt="Grid 2" className='w-full sm:h-[276px] h-fit object-contain' />
+             <div className="grid-container">
+            <img src="/assets/grid3.png" alt="Grid 3" className="w-full sm:h-[266px] h-fit object-contain" />
+            
             <div>
-              <p className="grid-headtext">Tech Stack</p>
-              <p className='grid-subtext'>I know java c c++ react node javascript python vue git android studio a lot of other stuff that I enjoy working with.</p>
+              <p className="grid-headtext">My Passion for Programming</p>
+              <p className="grid-subtext">I love Solving Problems and find new Innovative solutions.</p>
             </div>
 
           </div>
@@ -62,16 +64,17 @@ const About = () => {
           </div>
         </div>
 
-        <div className="xl:col-span-2 xl:row-span-3">
-          <div className="grid-container">
-            <img src="/assets/grid3.png" alt="Grid 3" className="w-full sm:h-[266px] h-fit object-contain" />
-            
-            <div>
-              <p className="grid-headtext">My Passion for Programming</p>
-              <p className="grid-subtext">I love Solving Problems and find new Innovative solutions.</p>
-            </div>
+        <div className="xl:col-span-2 xl:row-span-3 ">
+        
 
-            
+             <div className="grid-container  ">
+              {/* <img src="/assets/grid2.png" alt="Grid 2" className='w-full sm:h-[276px] h-fit object-contain' /> */}
+                <Tiles />
+             
+            <div className=''>
+              <p className="grid-headtext ">Tech Stack</p>
+              <p className='grid-subtext '>I know java c c++ react node javascript python vue git android studio a lot of other stuff that I enjoy working with.</p>
+            </div>
             
             </div>
         </div>

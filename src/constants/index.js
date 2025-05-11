@@ -265,7 +265,7 @@ export const navLinks = [
       duration: '2022 - Present',
       title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
       icon: '/assets/framer.svg',
-      animation: 'victory',
+      animation: 'hiphop1',
     },
     {
       id: 2,
@@ -274,7 +274,7 @@ export const navLinks = [
       duration: '2020 - 2022',
       title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
       icon: '/assets/figma.svg',
-      animation: 'clapping',
+      animation: 'hiphop2',
     },
     {
       id: 3,
@@ -283,6 +283,116 @@ export const navLinks = [
       duration: '2019 - 2020',
       title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
       icon: '/assets/notion.svg',
-      animation: 'salute',
+      animation: 'hiphop3',
     },
   ];
+
+  export const techStack = [
+    {
+      name: "Java",
+      category: "Language",
+      experienceYears: 3,
+      proficiency: "Intermediate",
+      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/openjdk.svg"
+    },
+    {
+      name: "C",
+      category: "Language",
+      experienceYears: 3,
+      proficiency: "Intermediate",
+      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/c.svg"
+    },
+    {
+      name: "Python",
+      category: "Language",
+      experienceYears: 3,
+      proficiency: "Intermediate",
+      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/python.svg"
+    },
+    {
+      name: "C++",
+      category: "Language",
+      experienceYears: 1,
+      proficiency: "Beginner",
+      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/cplusplus.svg"
+    },
+    {
+      name: "JavaScript",
+      category: "Language",
+      experienceYears: 1,
+      proficiency: "Beginner",
+      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/javascript.svg"
+    },
+    {
+      name: "TailwindCSS",
+      category: "CSS Framework",
+      experienceYears: 1,
+      proficiency: "Intermediate",
+      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tailwindcss.svg"
+    },
+    {
+      name: "SQL",
+      category: "Language",
+      experienceYears: 1,
+      proficiency: "Intermediate",
+      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/mysql.svg"
+    },
+    {
+      name: "Linux",
+      category: "Operating System",
+      experienceYears: 2,
+      proficiency: "Intermediate",
+      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linux.svg"
+    },
+    {
+      name: "Git",
+      category: "Version Control",
+      experienceYears: 2,
+      proficiency: "Intermediate",
+      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/git.svg"
+    },
+    {
+      name: "Docker",
+      category: "Containerization",
+      experienceYears: 0.8,
+      proficiency: "Beginner",
+      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/docker.svg"
+    },
+    {
+      name: "AWS",
+      category: "Cloud Service",
+      experienceYears: 0.8,
+      proficiency: "Beginner",
+      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/amazonaws.svg"
+    },
+    {
+      name: "Vue.js",
+      category: "Framework",
+      experienceYears: 0.8,
+      proficiency: "Beginner",
+      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/vuedotjs.svg"
+    },
+    {
+      name: "React",
+      category: "Framework",
+      experienceYears: 0.8,
+      proficiency: "Beginner",
+      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/react.svg"
+    },
+    {
+      name: "Flask",
+      category: "Framework",
+      experienceYears: 0.8,
+      proficiency: "Beginner",
+      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/flask.svg"
+    },
+
+
+    {
+      name: "Android",
+      category: "Platform",
+      experienceYears: 1,
+      proficiency: "Beginner",
+      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/android.svg"
+    }
+];

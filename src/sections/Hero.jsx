@@ -44,6 +44,7 @@ const Hero = () => {
                         <Cube position={sizes.cubePosition} />
                     </group>
                     <OrbitControls
+                    
                         minDistance={3}
                         maxDistance={30}
                     />

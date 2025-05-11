@@ -18,11 +18,13 @@ const DemoComputer =(props)=> {
     }
   },[txt])
   useGSAP(() => {
-    gsap.from(group.current.rotation, {
-        y: right? Math.PI/ 2: -Math.PI / 2,
-        duration: 1,
-        ease:'power3.out'
-        
+    
+    group.current.rotation.y = right?Math.PI / 2:-Math.PI / 2;
+    
+    gsap.to(group.current.rotation, {
+      y: 0,
+      duration: 1,
+      ease: 'power3.out'
     })
   },[txt])
   return (
