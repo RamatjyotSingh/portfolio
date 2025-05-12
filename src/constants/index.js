@@ -65,7 +65,7 @@ export const navLinks = [
     subdesc:
       'Written in C. Uses FFmpeg to extract frames/audio and jp2a to convert frames to monochrome ASCII. Started as a “rick‑roll” prank; now a full-blown Video to ASCII converter.',
     href: 'https://github.com/RamatjyotSingh/surprise-me',
-    texture: '/textures/project/project1.mp4',
+    texture: '/textures/project/sm-showcase.mp4',
     logo: '/assets/sm-logo.png',
     logoStyle: {
       backgroundColor: '#2A1816',
@@ -74,7 +74,7 @@ export const navLinks = [
     },
     spotlight: '/assets/spotlight1.png',
     tags: [
-      { id: 1, name: 'C',           path: '/assets/c.svg' },
+      { id: 1, name: 'C', path: '/assets/c.svg' },
 
     ],
     externalLink: "github",
@@ -86,7 +86,7 @@ export const navLinks = [
     subdesc:
       'Vue 3 + Vite SPA hosted on AWS EC2. I redesigned the UI, containerized the app with Docker, and added a GitHub Actions pipeline for zero‑downtime deploys. Goal: boost student sign‑ups and attract new sponsors.',
     href: 'https://umatt.org',
-    texture: '/textures/project/project2.mp4',
+    texture: '/textures/project/umatt-showcase.mkv',
     logo: '/assets/umatt-logo.png',
     logoStyle: {
       backgroundColor: '#13202F',
@@ -133,7 +133,7 @@ export const navLinks = [
     subdesc:
       'Wrote an HTTP/1.1 request parser & router using raw TCP sockets. Front‑end is vanilla JS + HTML/CSS. Supports REST endpoints, long‑poll messaging, and basic authentication—demonstrating deep‑dive into network protocols.',
     href: 'https://youtu.be/VYh-Vg5VyDU',
-    texture: '/textures/project/project5.mp4',
+    texture: '/textures/project/chat-app-showcase.mp4',
     logo: '/assets/chat-logo.png',
     logoStyle: {
       backgroundColor: '#1C1A43',
@@ -181,7 +181,7 @@ export const navLinks = [
     subdesc:
       'Course project: wrote a Bash‑like shell from scratch to interface with a custom file‑system. Reinforced low‑level syscalls, signals, and inter‑process communication.',
     href: 'https://youtu.be/4xWzvLZsV2Y',
-    texture: '/textures/project/project5.mp4',
+    texture: '/textures/project/shell-showcase.mp4',
     logo: '/assets/nqp_shell-logo.png',
     logoStyle: {
       backgroundColor: '#12222F',
