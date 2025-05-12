@@ -1,6 +1,5 @@
-import { useRef,useState } from 'react'
+import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
-
 
 const Contact = () => {
   const [loading, setLoading] = useState(false)
@@ -11,13 +10,14 @@ const Contact = () => {
     const { name, value } = e.target
     setFormData({ ...formData, [name]: value })
   }
+  
   const handleSubmit = async (e) => {
     e.preventDefault()
     setLoading(true)
     try {
       await emailjs.send(
-        "service_wdmlvbg",
-        "template_aqialum",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           form_name: formData.name,
           from_email: formData.email,
@@ -25,19 +25,16 @@ const Contact = () => {
           message: formData.message,
           to_email: "ramatjyot13.ca@gmail.com"
         },
-        "7BSsW776fQYwnapN6"
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       alert('Email sent successfully!')
-      setFormData({ name: '', email: '', message: '' }) // Reset form data
-    
+      setFormData({ name: '', email: '', message: '' })
       setLoading(false)
     } catch (error) {
       alert('Error sending email: ' + error.message)
       console.error('Error sending email:', error)
       setLoading(false)
     }
-
-    console.log('Form submitted:', formData)
   }
   return (
     <section id = "contact" className="c-space my-20">
