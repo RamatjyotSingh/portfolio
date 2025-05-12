@@ -40,7 +40,7 @@ const Contact = () => {
     console.log('Form submitted:', formData)
   }
   return (
-    <section className="c-space my-20">
+    <section id = "contact" className="c-space my-20">
         <div className="relative md:min-h-screen flex items-center justify-center flex-col lg:bg-[url('/assets/terminal.png')] bg-contain bg-center bg-no-repeat ">
           <div className="contact-container relative z-10 
    p-8 sm:p-10
@@ -50,7 +50,7 @@ const Contact = () => {
    backdrop-blur-md
    border border-gray-800
    shadow-xl shadow-black/50
-   lg:bg-transparent lg:bg-none lg:from-transparent lg:to-transparent lg:shadow-none lg:border-none">
+   lg:bg-transparent lg:bg-none lg:from-transparent lg:to-transparent lg:shadow-none lg:border-none lg:backdrop-blur-none">
             <h3 className="head-text">Let's Talk</h3>
             <p className="text-lg text-white-600 mt-3">Whatever you are doing I am here to lend a hand.</p>
             <form ref ={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7 ">

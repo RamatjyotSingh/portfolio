@@ -1,11 +1,12 @@
 import React from 'react'
 
-const Button = ({ name, containerClass, isBeam = false }) => {
+const Button = ({ name, containerClass, isBeam = false, onClick }) => {
   return (
-    
     <div className={containerClass}>
-      <button className={`btn ${containerClass}`}>
-        
+      <button 
+        className={`btn ${containerClass}`} 
+        onClick={onClick}
+      >
         {
             isBeam && (
                 <span className="relative flex h-3 w-3">
@@ -14,10 +15,8 @@ const Button = ({ name, containerClass, isBeam = false }) => {
                 </span>
             )
         }
-        
         {name}
-        
-        </button>
+      </button>
     </div>
   )
 }

@@ -18,8 +18,21 @@ const Projects = () => {
         }
         rotationDirection.current = dir; // Update direction ref
     }
+
+    const mapExternalLinkText = (externalLink) => {
+        const linkMap = {
+
+            "github": "GitHub repo",
+            "website": "live site",
+            "youtube": "YouTube Demo",
+            
+        };
+
+        return linkMap[externalLink] || "link";
+    }
+
     return (
-        <section className="c-space my-20">
+        <section id = "work" className="c-space my-20">
             <p className="head-text">My Work</p>
             <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
                 <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
@@ -43,12 +56,12 @@ const Projects = () => {
                             ))}
                         </div>
                         <a 
-                          className="flex items-center gap-2 cursor-pointer text-white-600 hover:text-white transition-colors" 
+                          className="flex z-10 items-center gap-2 cursor-pointer text-white-600 hover:text-white transition-colors" 
                           href={currentProject.href} 
                           target="_blank" 
                           rel="noopener noreferrer"
                         >
-                          <span>Check live site</span>
+                          <span>Check out {mapExternalLinkText(currentProject.externalLink)}</span>
                           <img className="h-3 w-3 inline-block" src="/assets/arrow-up.png" alt="arrow" />
                         </a>
                     </div>

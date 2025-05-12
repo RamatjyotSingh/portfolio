@@ -9,7 +9,7 @@ import Me from '../components/Me'
 const Experience = () => {
     const [animationName, setAnimationName] = useState("idle")
   return (
-    <div className="c-space my-20" id = "work">
+    <div className="c-space my-20">
         <div className="w-full text-white-600">
             <p className="head-text">My Work Experience</p>
             <div className="work-container">

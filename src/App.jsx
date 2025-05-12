@@ -12,15 +12,14 @@ import Tiles from './components/Tiles'
 const App = () => {
   return (
     <div>
-      {/* <Navbar />
-      <Hero /> */}
+      <Navbar />
+      <Hero />
       <About />
-      {/* <Projects />
-      <Clients />
+      <Projects />
+      {/* <Clients /> */}
       <Experience/>
-      <Contact/> */}
-      {/* <Footer/> */}
-      {/* <Tiles/> */}
+      <Contact/>
+      <Footer/>
     </div>
   )
 }

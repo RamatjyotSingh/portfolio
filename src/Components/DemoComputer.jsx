@@ -41,6 +41,7 @@ const DemoComputer =(props)=> {
           scale={[0.661, 0.608, 0.401]}
         >
             <meshBasicMaterial map={txt} toneMapped={false} />
+          
         </mesh>
         <group
           name="RootNode"

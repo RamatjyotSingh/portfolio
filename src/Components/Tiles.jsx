@@ -71,7 +71,7 @@ const Tiles = () => {
 
   return (
     <div className="h-full w-full space-y-6">
-      <style jsx>{`
+      <style jsx="true">{`
         .tech-grid {
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
@@ -147,13 +147,11 @@ const Tiles = () => {
               />
               
               {/* Icon with enhanced glow on hover */}
-              <div
+              <img
+                src={item.logo}
+                alt={`${item.name} icon`}
                 style={{
-                  backgroundColor: brandColors[item.name] || "#FFFFFF",
-                  WebkitMask: `url(${item.logoUrl}) no-repeat center / contain`,
-                  mask: `url(${item.logoUrl}) no-repeat center / contain`,
-                  height: "55%",
-                  width: "55%",
+                  width: '60%',
                   filter: `drop-shadow(0 0 1px ${brandColors[item.name] ? brandColors[item.name] + '40' : '#FFFFFF40'})`,
                   transition: 'filter 0.3s ease-out, transform 0.3s ease-out'
                 }}

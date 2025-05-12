@@ -1,3 +1,5 @@
+import { g, path } from "framer-motion/client";
+
 export const navLinks = [
     {
       id: 1,
@@ -57,194 +59,144 @@ export const navLinks = [
   ];
   
   export const myProjects = [
-    {
-      title: 'Podcastr - AI Podcast Platform',
-      desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
-      subdesc:
-        'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-      href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
-      texture: '/textures/project/project1.mp4',
-      logo: '/assets/project-logo1.png',
-      logoStyle: {
-        backgroundColor: '#2A1816',
-        border: '0.2px solid #36201D',
-        boxShadow: '0px 0px 60px 0px #AA3C304D',
-      },
-      spotlight: '/assets/spotlight1.png',
-      tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
-      ],
+  {
+    title: 'Surprise Me – Terminal‑Based ASCII Video Player',
+    desc: 'CLI tool that streams MP4s as  ASCII art with perfectly synced audio.',
+    subdesc:
+      'Written in C. Uses FFmpeg to extract frames/audio and jp2a to convert frames to monochrome ASCII. Started as a “rick‑roll” prank; now a full-blown Video to ASCII converter.',
+    href: 'https://github.com/RamatjyotSingh/surprise-me',
+    texture: '/textures/project/project1.mp4',
+    logo: '/assets/sm-logo.png',
+    logoStyle: {
+      backgroundColor: '#2A1816',
+      border: '0.2px solid #36201D',
+      boxShadow: '0 0 60px #AA3C304D',
     },
-    {
-      title: 'LiveDoc - Real-Time Google Docs Clone',
-      desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
-      subdesc:
-        'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-      href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-      texture: '/textures/project/project2.mp4',
-      logo: '/assets/project-logo2.png',
-      logoStyle: {
-        backgroundColor: '#13202F',
-        border: '0.2px solid #17293E',
-        boxShadow: '0px 0px 60px 0px #2F6DB54D',
-      },
-      spotlight: '/assets/spotlight2.png',
-      tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
-      ],
+    spotlight: '/assets/spotlight1.png',
+    tags: [
+      { id: 1, name: 'C',           path: '/assets/c.svg' },
+
+    ],
+    externalLink: "github",
+  },
+
+  {
+    title: 'UMATT Club Website',
+    desc: 'Official site for the University of Manitoba Association of Tiny Tractors.',
+    subdesc:
+      'Vue 3 + Vite SPA hosted on AWS EC2. I redesigned the UI, containerized the app with Docker, and added a GitHub Actions pipeline for zero‑downtime deploys. Goal: boost student sign‑ups and attract new sponsors.',
+    href: 'https://umatt.org',
+    texture: '/textures/project/project2.mp4',
+    logo: '/assets/umatt-logo.png',
+    logoStyle: {
+      backgroundColor: '#13202F',
+      border: '0.2px solid #17293E',
+      boxShadow: '0 0 60px #2F6DB54D',
     },
-    {
-      title: 'CarePulse - Health Management System',
-      desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
-      subdesc:
-        'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-      href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-      texture: '/textures/project/project3.mp4',
-      logo: '/assets/project-logo3.png',
-      logoStyle: {
-        backgroundColor: '#60f5a1',
-        background:
-          'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-        border: '0.2px solid rgba(208, 213, 221, 1)',
-        boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
-      },
-      spotlight: '/assets/spotlight3.png',
-      tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
-      ],
+    spotlight: '/assets/spotlight2.png',
+    tags: [
+      { id: 1, name: 'Vue.js',        path: '/assets/vue.svg' },
+      { id: 2, name: 'Docker',        path: '/assets/docker.svg' },
+      { id: 3, name: 'AWS',           path: '/assets/aws.svg' },
+    ],
+    externalLink: "website",
+  },
+
+  {
+    title: 'GymBuddy – Android Workout Builder',
+    desc: 'Mobile app that lets users design, and track custom workouts.',
+    subdesc:
+      'Team of five. Built in Java (3-Tier) with HSQLDB. Features  Workout builder, searchable exercise library, and recorded sessions. Earned 92 % in Software Engineering course demo.',
+    href: 'https://github.com/RamatjyotSingh/GymBuddyApp',
+    texture: '/textures/project/gymbuddy-showcase.mp4',
+    logo: '/assets/gymbuddy-logo.png',
+    logoStyle: {
+      backgroundColor: '#60f5a1',
+      background:
+        'linear-gradient(0deg,#60F5A150,#60F5A150),linear-gradient(180deg,rgba(255,255,255,.9) 0%,rgba(208,213,221,.8) 100%)',
+      border: '0.2px solid rgba(208,213,221,1)',
+      boxShadow: '0 0 60px rgba(35,131,96,.3)',
     },
-    {
-      title: 'Horizon - Online Banking Platform',
-      desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
-      subdesc:
-        'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-      href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-      texture: '/textures/project/project4.mp4',
-      logo: '/assets/project-logo4.png',
-      logoStyle: {
-        backgroundColor: '#0E1F38',
-        border: '0.2px solid #0E2D58',
-        boxShadow: '0px 0px 60px 0px #2F67B64D',
-      },
-      spotlight: '/assets/spotlight4.png',
-      tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
-      ],
+    spotlight: '/assets/spotlight3.png',
+    tags: [
+      { id: 1, name: 'Java',     path: '/assets/java.svg' },
+      { id: 2, name: 'Android',  path: '/assets/android.svg' },
+      { id: 3, name: 'SQL', path: '/assets/sql.svg' },
+    ],
+
+    externalLink: "github",
+  },
+
+  {
+    title: 'Custom HTTP Chat Server',
+    desc: 'Full‑stack chat app powered by a bare‑metal Python HTTP server.',
+    subdesc:
+      'Wrote an HTTP/1.1 request parser & router using raw TCP sockets. Front‑end is vanilla JS + HTML/CSS. Supports REST endpoints, long‑poll messaging, and basic authentication—demonstrating deep‑dive into network protocols.',
+    href: 'https://youtu.be/VYh-Vg5VyDU',
+    texture: '/textures/project/project5.mp4',
+    logo: '/assets/chat-logo.png',
+    logoStyle: {
+      backgroundColor: '#1C1A43',
+      border: '0.2px solid #252262',
+      boxShadow: '0 0 60px #635BFF4D',
     },
-    {
-      title: 'Imaginify - AI Photo Manipulation App',
-      desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-      subdesc:
-        'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-      href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-      texture: '/textures/project/project5.mp4',
-      logo: '/assets/project-logo5.png',
-      logoStyle: {
-        backgroundColor: '#1C1A43',
-        border: '0.2px solid #252262',
-        boxShadow: '0px 0px 60px 0px #635BFF4D',
-      },
-      spotlight: '/assets/spotlight5.png',
-      tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
-      ],
+    spotlight: '/assets/spotlight5.png',
+    tags: [
+      { id: 1, name: 'Python',     path: '/assets/python.svg' },
+      {id:2,name:"HTML",path: '/assets/html.svg'},
+      { id: 3, name: 'CSS',        path: '/assets/css.svg' },
+      { id: 4, name: 'JavaScript', path: '/assets/javascript.svg' },
+
+    ],
+    externalLink: "youtube",
+  },
+
+  // OPTIONAL: keep in a “Learning Projects” section
+  {
+    title: 'iPhone 15 Landing Page (Clone / Learning Project)',
+    desc: 'Pixel‑perfect replica of Apple’s iPhone 15 hero page.',
+    subdesc:
+      'Built while following JavaScript Mastery tutorial—focus on GSAP scroll animations and Three.js model control. Helped me master advanced React + Tailwind layout techniques.',
+    href: 'https://ramatjyotsingh.github.io/apple-iphone-clone/',
+    texture: '/textures/project/iphone-showcase.mkv',
+    logo: '/assets/iphone-logo.png',
+    logoStyle: {
+      backgroundColor: '#0E1F38',
+      border: '0.2px solid #0E2D58',
+      boxShadow: '0 0 60px #2F67B64D',
     },
-  ];
+    spotlight: '/assets/spotlight4.png',
+    tags: [
+      { id: 1, name: 'React',     path: '/assets/react.svg' },
+      { id: 2, name: 'Tailwind',  path: '/assets/tailwindcss.png' },
+      { id: 3, name: 'GSAP',      path: '/assets/gsap.svg' },
+      { id: 4, name: 'Three.js',  path: '/assets/three-js.svg' },
+    ],
+    externalLink: "website",
+  },
+
+  {
+    title: 'UNIX‑Style Shell (C)',
+    desc: 'Interactive shell implementing job control, pipes, and I/O redirection.',
+    subdesc:
+      'Course project: wrote a Bash‑like shell from scratch to interface with a custom file‑system. Reinforced low‑level syscalls, signals, and inter‑process communication.',
+    href: 'https://youtu.be/4xWzvLZsV2Y',
+    texture: '/textures/project/project5.mp4',
+    logo: '/assets/nqp_shell-logo.png',
+    logoStyle: {
+      backgroundColor: '#12222F',
+      border: '0.2px solid #193345',
+      boxShadow: '0 0 60px #2794D34D',
+    },
+    spotlight: '/assets/spotlight2.png',
+    tags: [
+      { id: 1, name: 'C',       path: '/assets/c.svg' },
+     
+    ],
+    externalLink: "youtube",
+  },
+];
+
   
   export const calculateSizes = (isSmall, isMobile, isTablet) => {
     return {
@@ -260,139 +212,144 @@ export const navLinks = [
   export const workExperiences = [
     {
       id: 1,
-      name: 'Framer',
-      pos: 'Lead Web Developer',
-      duration: '2022 - Present',
-      title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-      icon: '/assets/framer.svg',
+      name: 'University of Manitoba Association of Tiny Tractors',
+      pos: 'Volunteer Web Developer',
+      duration: '2024 - Present',
+      title: "As a volunteer web developer for UMATT, I am responsible for maintaining and enhancing the club's website. My role involves implementing new features, fixing bugs, and ensuring the site runs smoothly. I work closely with other members to gather feedback and make improvements.",
+      icon: '/assets/umatt-logo.png',
       animation: 'hiphop1',
     },
     {
       id: 2,
-      name: 'Figma',
-      pos: 'Web Developer',
-      duration: '2020 - 2022',
-      title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-      icon: '/assets/figma.svg',
+      name: 'The Home Depot',
+      pos: 'Tool Rental Associate',
+      duration: '2022 - Present',
+      title: "As a Tool Rental Associate at The Home Depot, I assist customers in selecting the right tools for their projects. I provide guidance on tool usage, maintenance, and safety protocols. My role also involves managing inventory and ensuring that rental equipment is in good working condition.",
+      icon: '/assets/thd.svg',
       animation: 'hiphop2',
     },
     {
       id: 3,
-      name: 'Notion',
-      pos: 'Junior Web Developer',
-      duration: '2019 - 2020',
-      title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-      icon: '/assets/notion.svg',
+      name: 'Asper School of Business',
+      pos: 'Grader',
+      duration: 'Fall 2024 ',
+      title: "As a Grader at the Asper School of Business, I am responsible for evaluating student assignments and providing constructive feedback. My role requires attention to detail and a strong understanding of the course material. I work closely with professors to ensure grading consistency and fairness.",
+      icon: '/assets/asper.jpg',
       animation: 'hiphop3',
     },
   ];
 
   export const techStack = [
+    // Core languages with good experience
     {
       name: "Java",
       category: "Language",
       experienceYears: 3,
       proficiency: "Intermediate",
-      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/openjdk.svg"
-    },
-    {
-      name: "C",
-      category: "Language",
-      experienceYears: 3,
-      proficiency: "Intermediate",
-      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/c.svg"
+      logo: "/assets/java.svg"
     },
     {
       name: "Python",
       category: "Language",
       experienceYears: 3,
       proficiency: "Intermediate",
-      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/python.svg"
+      logo: "/assets/python.svg"
     },
     {
-      name: "C++",
+      name: "C",
       category: "Language",
-      experienceYears: 1,
-      proficiency: "Beginner",
-      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/cplusplus.svg"
-    },
-    {
-      name: "JavaScript",
-      category: "Language",
-      experienceYears: 1,
-      proficiency: "Beginner",
-      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/javascript.svg"
-    },
-    {
-      name: "TailwindCSS",
-      category: "CSS Framework",
-      experienceYears: 1,
+      experienceYears: 3,
       proficiency: "Intermediate",
-      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tailwindcss.svg"
+      logo: "/assets/c.svg"
     },
     {
       name: "SQL",
       category: "Language",
       experienceYears: 1,
       proficiency: "Intermediate",
-      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/mysql.svg"
+      logo: "/assets/sql.svg"
+    },
+    
+    // Web technologies
+    {
+      name: "JavaScript",
+      category: "Language",
+      experienceYears: 1,
+      proficiency: "Beginner",
+      logo: "/assets/javascript.svg"
+    },
+    {
+      name: "React",
+      category: "Framework",
+      experienceYears: 0.7,
+      proficiency: "Beginner",
+      logo: "/assets/react.svg"
+    },
+    
+    // DevOps and tools
+    {
+      name: "Git",
+      category: "Version Control",
+      experienceYears: 2,
+      proficiency: "Intermediate",
+      logo: "/assets/git.svg"
     },
     {
       name: "Linux",
       category: "Operating System",
       experienceYears: 2,
       proficiency: "Intermediate",
-      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linux.svg"
-    },
-    {
-      name: "Git",
-      category: "Version Control",
-      experienceYears: 2,
-      proficiency: "Intermediate",
-      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/git.svg"
+      logo: "/assets/linux.svg"
     },
     {
       name: "Docker",
       category: "Containerization",
-      experienceYears: 0.8,
+      experienceYears: 0.6,
       proficiency: "Beginner",
-      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/docker.svg"
+      logo: "/assets/docker.svg"
     },
     {
       name: "AWS",
       category: "Cloud Service",
-      experienceYears: 0.8,
+      experienceYears: 0.6,
       proficiency: "Beginner",
-      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/amazonaws.svg"
+      logo: "/assets/aws.svg"
     },
+    
+    // Other technologies
     {
       name: "Vue.js",
       category: "Framework",
-      experienceYears: 0.8,
+      experienceYears: 0.5,
       proficiency: "Beginner",
-      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/vuedotjs.svg"
+      logo: "/assets/vue.svg"
     },
     {
-      name: "React",
-      category: "Framework",
-      experienceYears: 0.8,
+      name: "C++",
+      category: "Language",
+      experienceYears: 0.6,
       proficiency: "Beginner",
-      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/react.svg"
+      logo: "/assets/cpp.svg"
+    },
+    {
+      name: "TailwindCSS",
+      category: "CSS Framework",
+      experienceYears: 0.6,
+      proficiency: "Beginner",
+      logo: "/assets/tailwindcss.png"
+    },
+    {
+      name: "Android",
+      category: "Platform",
+      experienceYears: 0.5,
+      proficiency: "Beginner",
+      logo: "/assets/android.svg"
     },
     {
       name: "Flask",
       category: "Framework",
-      experienceYears: 0.8,
+      experienceYears: 0.4,
       proficiency: "Beginner",
-      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/flask.svg"
-    },
-
-
-    {
-      name: "Android",
-      category: "Platform",
-      experienceYears: 1,
-      proficiency: "Beginner",
-      logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/android.svg"
+      logo: "/assets/flask.svg"
     }
 ];
