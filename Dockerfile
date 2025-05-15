@@ -4,14 +4,14 @@ ARG NODE_VERSION=22.14.0
 
 ################################################################################
 # Use node image for base image for all stages.
-FROM node:${NODE_VERSION}-alpine as base
+FROM node:${NODE_VERSION}-alpine AS base
 
 # Set working directory for all build stages.
 WORKDIR /usr/src/app
 
 ################################################################################
 # Create a stage for installing production dependencies.
-FROM base as deps
+FROM base AS deps
 
 # Download dependencies as a separate step to take advantage of Docker's caching.
 RUN --mount=type=bind,source=package.json,target=package.json \
@@ -21,7 +21,7 @@ RUN --mount=type=bind,source=package.json,target=package.json \
 
 ################################################################################
 # Create a stage for building the application.
-FROM deps as build
+FROM deps AS build
 
 # Download additional development dependencies
 RUN --mount=type=bind,source=package.json,target=package.json \
@@ -37,8 +37,7 @@ ARG VITE_EMAILJS_PUBLIC_KEY
 ENV VITE_EMAILJS_SERVICE_ID=${VITE_EMAILJS_SERVICE_ID}
 ENV VITE_EMAILJS_TEMPLATE_ID=${VITE_EMAILJS_TEMPLATE_ID}
 ENV VITE_EMAILJS_PUBLIC_KEY=${VITE_EMAILJS_PUBLIC_KEY}
-# Add CI=false to ignore warnings during build
-ENV CI=false
+
 
 # Copy the rest of the source files into the image.
 COPY . .
@@ -48,7 +47,7 @@ RUN npm run build
 
 ################################################################################
 # Production stage with Nginx
-FROM nginx:alpine as production
+FROM nginx:alpine AS production
 
 # Copy custom nginx config
 COPY nginx.conf /etc/nginx/conf.d/default.conf
