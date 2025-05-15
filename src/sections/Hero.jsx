@@ -37,6 +37,12 @@ const Hero = () => {
                             rotation={[0, -Math.PI, 0]}
                             position={sizes.deskPosition} />
                     </HeroCamera>
+                    <OrbitControls
+                        maxDistance={40}
+                        minDistance={5}
+                        maxPolarAngle={Math.PI / 2}
+                     
+                    />
                     <group>
                         <Rings position={sizes.ringPosition} />
                         <Target position={sizes.targetPosition} />
