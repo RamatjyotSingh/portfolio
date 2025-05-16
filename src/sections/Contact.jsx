@@ -138,13 +138,7 @@ const Contact = () => {
     }
   }
 
-  useEffect(() => {
-    console.log("EmailJS Config:", {
-      service: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      template: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-      key: import.meta.env.VITE_EMAILJS_PUBLIC_KEY?.substring(0, 5) + "..." // Only show first 5 chars for security
-    });
-  }, []);
+ 
 
   return (
     <section 
