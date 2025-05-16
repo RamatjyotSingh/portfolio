@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "cross-env VITE_BUILD_TIME=%npm_package_version%-%RANDOM% vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
