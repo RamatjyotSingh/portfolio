@@ -1,16 +1,16 @@
-import React, { Suspense } from 'react'
+import  { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
 import HackerRoom from '../components/HackerRoom'
 import CanvasLoader from '../components/CanvasLoader'
 import { calculateSizes } from '../constants'
 import Rings from '../components/Rings'
-import ReactLogo from '../components/ReactLogo'
 import Target from '../components/Target'
 import Cube from '../components/Cube'
 import HeroCamera from '../components/HeroCamera'
 import { useMediaQuery } from 'react-responsive'
 import Button from '../components/Button'
+import KidGoku from '../components/KidGoku'
 
 const Hero = () => {
 
@@ -32,10 +32,13 @@ const Hero = () => {
                     <ambientLight intensity={1} />
                     <directionalLight position={[10, 10, 10]} intensity={0.5} />
                     <HeroCamera isMobile={isMobile}>
-                        <HackerRoom
+                        <Suspense fallback={<CanvasLoader />}>
+                            <HackerRoom
                             scale={sizes.deskScale}
                             rotation={[0, -Math.PI, 0]}
                             position={sizes.deskPosition} />
+                        </Suspense>
+                       
                     </HeroCamera>
                     <OrbitControls
                         maxDistance={40}
@@ -46,7 +49,7 @@ const Hero = () => {
                     <group>
                         <Rings position={sizes.ringPosition} />
                         <Target position={sizes.targetPosition} />
-                        <ReactLogo position={sizes.reactLogoPosition} />
+                        <KidGoku position={sizes.reactLogoPosition} />
                         <Cube position={sizes.cubePosition} />
                     </group>
                  
