@@ -10,7 +10,7 @@ This portfolio is based on the [3D Portfolio tutorial by JavaScript Mastery](htt
 - Modified color scheme and layout
 - Custom project content and sections
 - Additional animations and transitions
-- Dockerized deployment setup
+- Integration of Dragon Ball themed 3D models
 
 ## Features
 
@@ -66,7 +66,7 @@ This portfolio is based on the [3D Portfolio tutorial by JavaScript Mastery](htt
    npm run dev
    ```
 
-## Docker Deployment
+### Docker Deployment
 
 Build and run using Docker:
 
@@ -75,11 +75,17 @@ docker build -t portfolio:latest .
 docker run -p 80:80 portfolio:latest
 ```
 
+
+
 ## License
 
-MIT
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+The 3D models used in this project are licensed under CC-BY-4.0 as detailed in the component files.
 
 ## Credits
 
 - Base tutorial: [JavaScript Mastery](https://youtu.be/41lfYQhUzRs?si=pbL1pzwYGe7wbFKx)
-- 3D models from various sources
+- Dragon Balls model by [Anthony Yanez](https://sketchfab.com/paulyanez) on [Sketchfab](https://sketchfab.com/3d-models/the-dragon-balls-77baebec10d940f08d09b5f9059d4066) (CC-BY-4.0)
+- Kid Goku model by [Antouss](https://sketchfab.com/antouss) on [Sketchfab](https://sketchfab.com/3d-models/son-goku-and-kintoun-nimbus-0e05229282e644ab978d7d9c09ab4ec2) (CC-BY-4.0)
+```
