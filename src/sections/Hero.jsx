@@ -39,7 +39,7 @@ const Hero = () => {
                     </HeroCamera>
                     <OrbitControls
                         maxDistance={40}
-                        minDistance={5}
+                        minDistance={7}
                         maxPolarAngle={Math.PI / 2}
                      
                     />
