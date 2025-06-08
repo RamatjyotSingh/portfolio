@@ -83,6 +83,7 @@ const Contact = () => {
           from_email: formData.email,
           to_name: "Ramatjyot Singh",
           message: formData.message,
+          
           to_email: "ramatjyot13.ca@gmail.com"
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
@@ -114,7 +115,6 @@ const Contact = () => {
   
   // Check if elements are in view
   const isSectionInView = useInView(sectionRef, { once: true, amount: 0.1 })
-  const isHeadingInView = useInView(headingRef, { once: true, amount: 0.5 })
   const isFormInView = useInView(formRef, { once: true, amount: 0.2 })
   
   // Animation variants
@@ -138,7 +138,6 @@ const Contact = () => {
     }
   }
 
- 
 
   return (
     <section 

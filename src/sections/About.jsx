@@ -17,7 +17,7 @@ const About = () => {
   }
   
   const handleCopy = () => {
-    navigator.clipboard.writeText('ramatjyot13.ca@gmail.com')
+    navigator.clipboard.writeText('contact@ramatjyotsingh.me')
     setIsCopied(true)
     setTimeout(() => {
       setIsCopied(false)
@@ -182,7 +182,7 @@ const About = () => {
                   className="group-hover:scale-110 transition-transform duration-300"
                 />
                 <p className='lg:text-2xl md:text-xl font-medium text-white/60 group-hover:text-white transition-colors duration-300'>
-                  {isCopied ? "Email copied!" : "ramatjyot13.ca@gmail.com"}
+                  {isCopied ? "Email copied!" : "contact@ramatjyotsingh.me"}
                 </p>
               </div>
             </div>
